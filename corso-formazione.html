@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Corso di Formazione Audiovisiva | REC MOVIE</title>
+  <style>
+    :root {
+      --bg-color: #0b0b0b;
+      --bg-secondary: #141414;
+      --bg-card: #1c1c1c;
+      --header-bg: #2a2a2d;
+      --text-color: #ffffff;
+      --text-muted: #bcbcbc;
+      --accent-bordo: #b90e0c;
+      --accent-bordo-light: #d6110e;
+    }
+
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; font-family: 'Segoe UI', system-ui, -apple-system, sans-serif; }
+    body { background-color: var(--bg-color); color: var(--text-color); line-height: 1.6; }
+
+    header {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 4%;
+      background-color: var(--header-bg);
+      border-bottom: 2px solid var(--accent-bordo);
+      z-index: 1000;
+      height: 85px;
+    }
+
+    .logo-header { height: 81px; width: auto; object-fit: contain; }
+    .back-btn {
+      color: var(--text-color);
+      text-decoration: none;
+      font-weight: 600;
+      background-color: var(--accent-bordo);
+      padding: 0.5rem 1.2rem;
+      border-radius: 4px;
+      transition: background 0.3s;
+    }
+    .back-btn:hover { background-color: var(--accent-bordo-light); }
+
+    .page-hero {
+      padding: 10rem 8% 4rem 8%;
+      background: linear-gradient(rgba(11, 11, 11, 0.85), rgba(11, 11, 11, 0.95)), 
+                  url("http://googleusercontent.com/image_collection/image_retrieval/11446484774058401779_0") center/cover no-repeat;
+      text-align: center;
+    }
+    .page-hero h1 { font-size: 2.8rem; margin-bottom: 1rem; }
+    .highlight { color: var(--accent-bordo-light); }
+    .badge {
+      display: inline-block;
+      background-color: var(--accent-bordo);
+      padding: 0.4rem 1rem;
+      border-radius: 20px;
+      font-size: 0.9rem;
+      font-weight: 700;
+      margin-bottom: 1rem;
+    }
+
+    .content-section { padding: 4rem 8%; display: grid; grid-template-columns: 1fr 1fr; gap: 4rem; }
+
+    .info-box h2 { font-size: 2rem; margin-bottom: 1.5rem; }
+    .info-box h2 span { color: var(--accent-bordo-light); }
+    .info-box p { color: var(--text-muted); margin-bottom: 1.2rem; font-size: 1.05rem; }
+    
+    .course-highlights { margin-top: 2rem; list-style: none; }
+    .course-highlights li { margin-bottom: 0.8rem; display: flex; align-items: center; gap: 10px; color: #fff; }
+    .course-highlights li::before { content: "✓"; color: var(--accent-bordo-light); font-weight: bold; }
+
+    /* Modulo Form */
+    .form-box {
+      background-color: var(--bg-card);
+      padding: 2.5rem;
+      border-radius: 8px;
+      border-top: 4px solid var(--accent-bordo);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+    }
+    .form-box h3 { font-size: 1.6rem; margin-bottom: 0.5rem; }
+    .form-box p { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1.5rem; }
+
+    .form-group { margin-bottom: 1.2rem; }
+    .form-group label { display: block; margin-bottom: 0.4rem; font-size: 0.9rem; color: #ddd; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 0.8rem;
+      background-color: #121212;
+      border: 1px solid #333;
+      border-radius: 4px;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      outline: none;
+      border-color: var(--accent-bordo-light);
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 1rem;
+      background-color: var(--accent-bordo);
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      font-weight: 700;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .submit-btn:hover { background-color: var(--accent-bordo-light); }
+
+    footer { text-align: center; padding: 2rem; background-color: #050505; border-top: 1px solid #222; color: var(--text-muted); }
+
+    @media (max-width: 900px) {
+      .content-section { grid-template-columns: 1fr; gap: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <a href="index.html" class="logo-container">
+      <img src="C:\Users\schia\Desktop\sito rec\materiale\LOGO REC MOVIE PNG BIANCO.png" alt="REC MOVIE Logo" class="logo-header" onerror="this.onerror=null; this.src='LOGO REC MOVIE PNG BIANCO.png';">
+    </a>
+    <a href="index.html" class="back-btn">&larr; Torna alla Home</a>
+  </header>
+
+  <section class="page-hero">
+    <span class="badge">DA OTTOBRE A MAGGIO</span>
+    <h1>Corso Annuale di <span class="highlight">Produzione Audiovisiva</span></h1>
+    <p>Impara l'arte della ripresa, della fotografia cinematografica e del montaggio con professionisti del settore.</p>
+  </section>
+
+  <section class="content-section">
+    <!-- Dettagli del corso -->
+    <div class="info-box">
+      <h2>Diventa un <span>Filmmaker</span> Completo</h2>
+      <p>Il corso annuale di REC MOVIE è un percorso pratico e teorico strutturato in <strong>8 mesi (da Ottobre a Maggio)</strong>, pensato per chi vuole trasformare la passione per il video in una professione.</p>
+      <p>Imparerai a gestire un'idea dall'ideazione iniziale (script e storyboard), passando per il lavoro sul set con fotocamere, luci e audio professionale, fino alla post-produzione e color grading.</p>
+      
+      <ul class="course-highlights">
+        <li>Tecniche di ripresa e regia cinematografica</li>
+        <li>Gestione dell'illuminazione sul set</li>
+        <li>Registrazione e sound design audio</li>
+        <li>Montaggio e Color Grading avanzato</li>
+        <li>Sviluppo di un Portfolio personale a fine corso</li>
+      </ul>
+    </div>
+
+    <!-- Modulo Form -->
+    <div class="form-box">
+      <h3>Richiedi Informazioni</h3>
+      <p>Compila il modulo per ricevere il programma dettagliato, i costi e il calendario delle lezioni.</p>
+
+      <form action="#" method="POST" onsubmit="event.preventDefault(); alert('Grazie per l\'interesse! Ti contatteremo al più presto.');">
+        <div class="form-group">
+          <label for="nome">Nome e Cognome *</label>
+          <input type="text" id="nome" name="nome" required placeholder="Inserisci il tuo nome">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email *</label>
+          <input type="email" id="email" name="email" required placeholder="tuamail@esempio.com">
+        </div>
+
+        <div class="form-group">
+          <label for="telefono">Telefono *</label>
+          <input type="tel" id="telefono" name="telefono" required placeholder="333 1234567">
+        </div>
+
+        <div class="form-group">
+          <label for="esperienza">Livello di Esperienza</label>
+          <select id="esperienza" name="esperienza">
+            <option value="principiante">Principiante (Nessuna esperienza)</option>
+            <option value="intermedio">Intermedio (Uso già la fotocamera)</option>
+            <option value="avanzato">Avanzato (Voglio affinare le tecniche)</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="messaggio">Note o Domande</label>
+          <textarea id="messaggio" name="messaggio" rows="4" placeholder="Scrivi qui eventuali domande..."></textarea>
+        </div>
+
+        <button type="submit" class="submit-btn">Invia Richiesta</button>
+      </form>
+    </div>
+  </section>
+
+  <footer>
+    <p>&copy; 2026 REC MOVIE. Tutti i diritti riservati.</p>
+  </footer>
+
+</body>
+</html>
